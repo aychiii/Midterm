@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtakuGuide</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./signup.html">
+    <link rel="stylesheet" href="./login.html">
+    <link rel="stylesheet" href="./privacy.html">
+    <link rel="stylesheet" href="./terms.html">
+    <link rel="stylesheet" href="./FAQS.html">
+ 
+</head>
+<body>
+
+
+<!-- Header -->
+  <div class="bg-dark text-white text-center w-100 pl-20px pr-40px">
+    <header class="d-flex flex-wrap align-items-center justify-content-between py-3">
+        
+        <!-- Logo Section -->
+        <div class="col-12 col-md-3 mb-2 mb-md-0 d-flex justify-content-center justify-content-md-start">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="./images/Otakulogo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2">Features</a></li>
+            <li><a href="#aboutus" class="nav-link px-2">About Us</a></li>
+            <li><a href="#contactus" class="nav-link px-2">Contact Us</a></li>
+        </ul>
+
+        <!-- Buttons (Login/Signup) -->
+        <div class="col-12 col-md-3 text-center text-md-end">
+            <button type="button" onclick="location.href='login.html'" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" onclick="location.href='signup.html'" class="btn btn-primary">Sign-up</button>
+        </div>
+        
+    </header>
+</div>
+
+    
+<div class="px-4 py-5 my-5 text-center">
+  <div class="row justify-content-center">
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+          <img class="mx-2" src="./images/anime.jpg" alt="" width="500" height="300">
+          <img class="mx-2" src="./images/another anime.png" alt="" width="500" height="300">
+      </div>
+  </div>
+        <h1 class="display-5 mt-4 text-body-emphasis ">Welcome to OtakuGuide</h1>
+        <h3>Turning Pages, Uncovering Worlds</h3>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Looking for your next manga obsession? Dive into our curated recommendations and discover hidden gems, classic tales, and trending series tailored just for you. Whether you're a seasoned otaku or a newcomer, our platform helps you explore new stories that match your taste. Join us and uncover your next favorite read!</p>
+        </div>
+      </div>
+
+
+
+        <header class="features">
+            <h1>Features</h1>
+            <nav>
+                <ul nav col-12 col-md-auto mb-2 justify-content-center mb-md-0>
+                    <li type="button" class="btn btn-outline-secondary me-2"><a href="#recommendations">Personalized Recommendations</a></li>
+                    <li type="button" class="btn btn-outline-secondary me-2"><a href="#anime-info">Anime Information</a></li>
+                    <li type="button" class="btn btn-outline-secondary me-2"><a href="#custom-lists">Custom Anime Lists</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Personalized Recommendations Section -->
+        <section id="recommendations" class="section">
+            <h2 class="text-center mb-4">Personalized Anime Recommendations</h2>
+            <div class="anime-grid" id="recommendations-list">
+                <!-- Example anime cards -->
+                <div class="anime-card">
+                    <img src="images/one piece.jpg" alt="Anime Poster">
+                    <h3>One Piece</h3>
+                    <p>Genre: Action, Adventure</p>
+                </div>
+                <div class="anime-card">
+                    <img src="images/black clover.jpg" alt="Anime Poster">
+                    <h3>Black Clover</h3>
+                    <p>Genre: Adventure, Fantasy</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Anime Information Section -->
+        <section id="anime-info" class="section">
+            <h2>Anime Information & Metadata</h2>
+            <div class="anime-info">
+                <img src="images/naruto.jpg" alt="Anime Poster">
+                <div class="anime-details">
+                    <h3>Naruto</h3>
+                    <p><strong>Genres:</strong> Action, Fantasy</p>
+                    <p><strong>Seasons:</strong> 10</p>
+                    <p><strong>Rating:</strong> 8.4/10</p>
+                    <p><strong>Summary:</strong> This anime follows the journey of a a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Custom Anime Lists Section -->
+        <section id="custom-lists" class="section">
+            <h2>Create Your Custom Anime Lists</h2>
+            <form id="custom-list-form">
+                <input type="text" id="list-name" placeholder="List Name" required>
+                <textarea id="list-description" placeholder="List Description"></textarea>
+                <button type="submit">Create List</button>
+            </form>
+    
+            <div class="custom-lists">
+                <h3>Your Lists</h3>
+                <ul id="custom-lists-container">
+                    <!-- Example List -->
+                    <li>
+                        <h4>Top 10 Action Anime</h4>
+                        <p>Description: This list features the best action-packed anime series.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+
+
+
+
+<section id="aboutus">
+    <div class="container">
+        <div class="about-us">
+            <h1>About Us</h1>
+            <p>Welcome to OtakuGuide your ultimate destination for discovering the fascinating world of manga!</p>
+            <p>At OtakuGuide, we believe that every manga reader deserves a personalized experience that connects them with stories that resonate with their interests. Our mission is to help you navigate the vast array of manga out there, whether you're a long-time fan or just starting your journey.</p>
+            <p>We invite you to join our growing community of manga lovers! Share your thoughts, recommend your favorites, and connect with others who share your passion. With [Your Website Name], you'll never run out of captivating stories to dive into.</p>
+            <p>Thank you for visiting us, and happy reading!</p>
+        </div>
+        <div class="image">
+            <img src="./images/about us.jpg">
+        </div>
+    </div>
+</section>
+        
+<section id="contactus">
+    <footer class="bg-dark text-white mt-5 text-center">
+        <div class="containerss py-4">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li><a href="./privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="./terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li><a href="./FAQS.html" class="text-white text-decoration-none">FAQs</a></li>
+                        <li><a href="#aboutus" class="text-white text-decoration-none">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="mailto:support@example.com" class="text-white text-decoration-none">otakuguide@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890" class="text-white text-decoration-none">09679519241</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 bg-secondary">
+            <p class="mb-0">&copy; 2024 Your Website. All rights reserved.</p>
+            <a href="#" class="text-white me-3">
+              <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="#" class="text-white me-3">
+              <i class="bi bi-twitter" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="#" class="text-white me-3">
+              <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+          </a>
+        </div>
+    </footer>
+</section>
+      
+
+
+      
+</body>
+</html>
